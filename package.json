@@ -1,0 +1,34 @@
+{
+  "name": "vuplay-jwplayer",
+  "version": "1.0.0",
+  "description": "a demo repo on how to use vudrm with jwplayer",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vualto/vuplay-jwplayer.git"
+  },
+  "keywords": [
+    "vuplay",
+    "vudrm",
+    "jwplayer",
+    "vualto",
+    "widevine",
+    "playready",
+    "fairplay",
+    "mpeg-dash",
+    "dash",
+    "hls"
+  ],
+  "author": "Robert Mitchell <robert.mitchell@vualto.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vualto/vuplay-jwplayer/issues"
+  },
+  "homepage": "https://github.com/Vualto/vuplay-jwplayer#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1"
+  }
+}
