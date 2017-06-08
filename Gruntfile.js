@@ -66,7 +66,7 @@ module.exports = function (grunt) {
                 options: {
                     protocol: "https",
                     hostname: "jwplayer.vuplay.local.drm.technology",
-                    port: 14703,
+                    port: 14705,
                     base: "dist",
                     keepalive: true
                 }
