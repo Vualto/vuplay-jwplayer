@@ -1,6 +1,5 @@
 module.exports = function (grunt) {
     var jwplayerUrl = "https://cdn.vuplay.co.uk/jwplayer/7.11.3/jwplayer.js";
-    var jwplayerKey = "n9TcVf7Qd/xhvZK/nUiPqab4YBcQLyvD6Zw2vA==";
 
     grunt.initConfig({
         package: grunt.file.readJSON("package.json"),
@@ -50,7 +49,7 @@ module.exports = function (grunt) {
                         },
                         {
                             pattern: "{jwplayer-key}",
-                            replacement: jwplayerKey
+                            replacement: grunt.option("jwplayer-key")
                         },
                         {
                             pattern: "{vuplayjs}",
