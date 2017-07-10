@@ -1,5 +1,5 @@
 module.exports = function (grunt) {
-    var jwplayerUrl = "https://cdn.vuplay.co.uk/jwplayer/7.11.3/jwplayer.js";
+    var jwplayerUrl = "https://cdn.vuplay.co.uk/jwplayer/7.12.1/jwplayer.js";
 
     grunt.initConfig({
         package: grunt.file.readJSON("package.json"),
