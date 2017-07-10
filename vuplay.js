@@ -1,15 +1,15 @@
 // Set the mpeg-dash stream url.
-var mpegDashStreamUrl = "https://d1chyo78gdexn4.cloudfront.net/vualto-demo/sintel/sintel.ism/manifest.mpd";
+var mpegDashStreamUrl = "<mpeg-dash-stream-url>";
 
 // Set the hls stream url.
-var hlsStreamUrl = "https://d1chyo78gdexn4.cloudfront.net/vualto-demo/sintel/sintel.ism/manifest.m3u8"
+var hlsStreamUrl = "<hls-stream-url>"
 
 // Set the url to retrieve the fairplay certificate from.
 // Please contact support@vualto.com if you do not know what this is.
-var fairplayCertUrl = "https://fairplay-license.drm.technology/certificate"
+var fairplayCertUrl = "<fairplay-cert-url>"
 
 // Please login to https://admin.drm.technology to generate a vudrm token.
-var vudrmToken = "vualto-demo|2017-07-10T16:42:59Z|YSnJPmEceoKkA3sc3q2KdoasABL13fJ19sHQc/b9O++MWwGf/dJlbyTVOdoRpA3S|2c40f33c47f7fd7dbdce82e3bff6fc764f2497a9"
+var vudrmToken = "<vudrm-token>"
 
 
 // The following three methods are required by JWPlayer for the vudrm Fairplay integration.
@@ -61,34 +61,58 @@ var base64EncodeUint8Array = function (input) {
   return output;
 };
 
-// setup jwplayer, passing the stream urls, fairplay cert url, license server urls and vudrm token.
+// Create the PlayReady DRM configuration. The vudrm token can be attached to the license server url. 
+// The vudrm token must be URL encoded.
+var playReadyDrmConfig = {
+  url: "https://playready-license.drm.technology/rightsmanager.asmx?token=" + encodeURIComponent(vudrmToken)
+};
+
+// Create the Widevine DRM configuration. Pass the license server url.
+// vudrm requests a custom json body to be sent and so will override the default license request body injecting the vudrm token and key id.
+var widevineDrmConfig = {
+  url: "https://widevine-proxy.drm.technology/proxy",
+  licenseRequestFilter: function (request, drmInfo) {
+    var keyId = drmInfo.keyIds[0].toUpperCase();
+    var body = JSON.stringify({
+      token: vudrmToken,
+      drm_info: Array.apply(null, new Uint8Array(request.body)),
+      kid: keyId
+    });
+    request.body = body;
+    request.headers["Content-Type"] = "application/json";
+  }
+};
+
+// Create the Fairplay DRM configuration. Pass the fairplay certificate url, the license server url (processSpcUrl) and the extracted content id. 
+var fairplayDrmConfig = {
+  certificateUrl: fairplayCertUrl,
+  processSpcUrl: "https://fairplay-license.drm.technology/license",
+  extractContentId: extractContentId,
+  licenseRequestHeaders: [
+    {
+      "name": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  licenseResponseType: "arraybuffer",
+  licenseRequestMessage: createLicenseRequestMessage
+};
+
+// setup jwplayer, passing the stream urls and DRM configurations.
 jwplayer('player').setup({
   playlist: [{
     sources: [
       {
         file: mpegDashStreamUrl,
         drm: {
-          playready: {
-            url: "https://playready-license.drm.technology/rightsmanager.asmx?token=" + encodeURIComponent(vudrmToken)
-          }
+          playready: playReadyDrmConfig,
+          widevine: widevineDrmConfig
         }
       },
       {
         file: hlsStreamUrl,
         drm: {
-          fairplay: {
-            certificateUrl: fairplayCertUrl,
-            processSpcUrl: "https://fairplay-license.drm.technology/license",
-            extractContentId: extractContentId,
-            licenseRequestHeaders: [
-              {
-                "name": "Content-Type",
-                "value": "application/json"
-              }
-            ],
-            licenseResponseType: "arraybuffer",
-            licenseRequestMessage: createLicenseRequestMessage
-          }
+          fairplay: fairplayDrmConfig
         }
       }
     ]
