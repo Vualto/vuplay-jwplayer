@@ -1,15 +1,15 @@
 // Set the mpeg-dash stream url.
-var mpegDashStreamUrl = "<mpeg-dash-stream-url>";
+var mpegDashStreamUrl = "https://d1chyo78gdexn4.cloudfront.net/vualto-demo/sintel/sintel.ism/manifest.mpd";
 
 // Set the hls stream url.
-var hlsStreamUrl = "<hls-stream-url>"
+var hlsStreamUrl = "https://d1chyo78gdexn4.cloudfront.net/vualto-demo/sintel/sintel.ism/manifest.m3u8"
 
 // Set the url to retrieve the fairplay certificate from.
 // Please contact support@vualto.com if you do not know what this is.
-var fairplayCertUrl = "<fairplay-cert-url>"
+var fairplayCertUrl = "https://fairplay-license.drm.technology/certificate"
 
 // Please login to https://admin.drm.technology to generate a vudrm token.
-var vudrmToken = "<vudrm-token>"
+var vudrmToken = "vualto-demo|2017-07-10T16:42:59Z|YSnJPmEceoKkA3sc3q2KdoasABL13fJ19sHQc/b9O++MWwGf/dJlbyTVOdoRpA3S|2c40f33c47f7fd7dbdce82e3bff6fc764f2497a9"
 
 
 // The following three methods are required by JWPlayer for the vudrm Fairplay integration.
