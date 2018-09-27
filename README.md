@@ -5,7 +5,7 @@
 This repo will demostrate how to use [vudrm](http://vudrm.vualto.com/) with the [JWPlayer](https://jwplayer.com).
 If you have any questions please contact support@vualto.com
 
-This repo is currently targeted at [version 7.12.1](https://developer.jwplayer.com/jw-player/docs/developer-guide/release_notes/release_notes_7/#version711) of JWPlayer
+This repo is currently targeted at [version 8.5.6](https://developer.jwplayer.com/release-notes/jw-player/?id=12380325) of JWPlayer
 
 ## Instructions
 
