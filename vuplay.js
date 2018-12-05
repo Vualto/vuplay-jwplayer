@@ -5,8 +5,8 @@ var mpegDashStreamUrl = "<mpeg-dash-stream-url>";
 var hlsStreamUrl = "<hls-stream-url>"
 
 // Set the url to retrieve the fairplay certificate from.
-// Please contact support@vualto.com if you do not know what this is.
-var fairplayCertUrl = "<fairplay-cert-url>"
+// Replace "<client>" with your client name. Please contact support@vualto.com if you do not know what this is.
+var fairplayCertUrl = "https://fairplay-license.drm.technology/certificate/<client>"
 
 // Please login to https://admin.drm.technology to generate a vudrm token.
 var vudrmToken = "<vudrm-token>"
