@@ -33,7 +33,7 @@ This repo contains a development node.js server. This server is not suitable for
 2. Run `grunt serve --jwplayer-key=<your-jwplayer-key>`, replacing `<your-jwplayer-key>` with your jwplayer key.
 3. Load a supported browser and go to `https://jwplayer.vuplay.local.drm.technology:14703`
 
-You will need an enterprise license with JWPlayer in order to playback DRM encrypted content. Please contact support@vualto.com or [JWPlayer](https://www.jwplayer.com/pricing/) for more information.
+You will need an enterprise license with JWPlayer in order to playback DRM encrypted content. Please contact support@vualto.com or [JWPlayer](https://www.jwplayer.com/pricing/) for more information. To retrieve the jwplayer key [click here](https://dashboard.jwplayer.com/#/players/downloads) and copy the license key for the appropriate player in the `Downloads` section.
 
 In order to allow DRM encrypted playback in chrome (https://goo.gl/EEhZqT), SSL has been enabled for the demo. You will get a warning about an invalid cert `NET::ERR_CERT_AUTHORITY_INVALID` but this can safely be ignored.
 
