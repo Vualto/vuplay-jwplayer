@@ -1,17 +1,26 @@
-<!DOCTYPE>
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <title>Vuplay with dashjs</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>JW Player example</title>
+        <meta name="description" content="JW Player example" />
+        <meta name="author" content="Vualto" />
         <style>
-            #player {
+            #vuplay-container {
                 width: 50%;
             }
         </style>
     </head>
     <body>
-        <div id="player"></div>
-        <script type="text/javascript" src="{jwplayer}"></script>
-        <script>jwplayer.key="{jwplayer-key}";</script>
-        <script type="text/javascript" src="{vuplayjs}"></script>
+        <div id="vuplay-container"></div>
+        <script
+            type="text/javascript"
+            src="https://cdn.vuplay.co.uk/jwplayer/8.7.6/jwplayer.js"
+        ></script>
+        <script>
+            jwplayer.key = "<jwplayer-key>";
+        </script>
+        <script type="text/javascript" src="vuplay-jwplayer.js"></script>
     </body>
 </html>
