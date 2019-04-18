@@ -104,7 +104,7 @@
     };
 
     // setup jwplayer, passing the stream URLs and DRM configurations.
-    jwplayer("player").setup({
+    jwplayer("vuplay-container").setup({
         playlist: [
             {
                 sources: [
