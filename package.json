@@ -4,7 +4,7 @@
     "description": "A basic implementation of the JW Player with the option to integrate VUDRM",
     "main": "src/vuplay-jwplayer.js",
     "scripts": {
-        "build": "grunt build && grunt serve",
+        "build": "grunt serve",
         "format:write": "prettier --write \"**/*.{ts,tsx,js,jsx,json,css,scss,md,html}\"",
         "format:check": "prettier --list-different \"**/*.{ts,tsx,js,jsx,json,css,scss,md,html}\""
     },
