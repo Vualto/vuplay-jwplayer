@@ -8,7 +8,7 @@
 This repository will demostrate how to use [VUDRM](https://vudrm.vualto.com/) with the [JW Player](https://jwplayer.com).
 If you have any questions please contact <support@vualto.com>
 
-This repository is currently targeted at [version 8.5.6](https://developer.jwplayer.com/release-notes/jw-player/?id=12380325) of JW Player
+This repository is currently targeted at [version 8.16.3](https://www.jwplayer.com/release-notes/jw-player/?id=27649241) of JW Player
 
 ## Instructions
 
