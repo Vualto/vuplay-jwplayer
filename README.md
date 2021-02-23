@@ -8,7 +8,7 @@
 This repository will demostrate how to use [VUDRM](https://vudrm.vualto.com/) with the [JW Player](https://jwplayer.com).
 If you have any questions please contact <support@vualto.com>
 
-This repository is currently targeted at [version 8.16.3](https://www.jwplayer.com/release-notes/jw-player/?id=27649241) of JW Player
+This repository is currently targeted at [version 8.18.4](https://releases.jwplayer.com/jw-player/#v8.18.4) of JW Player
 
 ## Instructions
 
@@ -27,10 +27,14 @@ This repository is currently targeted at [version 8.16.3](https://www.jwplayer.c
 3. In the file `vuplay-jwplayer.js` replace `<hls-stream-url>` with your [HLS](https://developer.apple.com/streaming/) stream URL.
 4. In the file `vuplay-jwplayer.js` replace `<fairplay-cert-url>` with the URL to the fairplay certificate. Please contact support@vualto.com if you do not have this URL.
 5. In the file `vuplay-jwplayer.js` replace `<your-vudrm-token>` with a VUDRM token from [https://admin.drm.technology](https://admin.drm.technology)
-6. Run `npm run build` in the project's root. This will create a `dist` folder that contains all the files needed to run this demo. N.B. You will need to add the host `bitmovin.local.vuplay.co.uk` to your local machine's hosts file in order for this to work. This domain will need to be white listed within your Bitmovin dashboard.
-7. Load a supported browser and go to `https://jwplayer.vuplay.local.drm.technology:14703`
+6. In the file `index.html` replace `<jwplayer-key>` with your JWPlayer key.
+7. Run `npm run build` in the project's root. This will create a `dist` folder that contains all the files needed to run this demo. 
+8. Add the host `jwplayer.vuplay.local.drm.technology` to your local machine's hosts file.
+9. Load a supported browser and go to `https://jwplayer.vuplay.local.drm.technology:14703`
 
-You will need an enterprise license with JW Player in order to playback DRM encrypted content. Please contact support@vualto.com or [JW Player](https://www.jwplayer.com/pricing/) for more information. To retrieve the JW Player key [click here](https://dashboard.jwplayer.com/#/players/downloads) and copy the license key for the appropriate player in the `Downloads` section.
+You will need an enterprise license with JW Player in order to playback DRM encrypted content. Please contact support@vualto.com or [JW Player](https://www.jwplayer.com/pricing/) for more information. 
+
+To retrieve the JW Player key [click here](https://dashboard.jwplayer.com/#/players/downloads) and copy the license key for the appropriate player in the `Downloads` section.
 
 In order to allow DRM encrypted playback in chrome (<https://goo.gl/EEhZqT>), SSL has been enabled for the demo. You will get a warning about an invalid cert `NET::ERR_CERT_AUTHORITY_INVALID` but this can safely be ignored.
 
