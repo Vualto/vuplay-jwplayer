@@ -26,7 +26,7 @@ This repository is currently targeted at [version 8.18.4](https://releases.jwpla
 2. In the file `vuplay-jwplayer.js` replace `<dash-stream-url>` with your [MPEG-DASH](https://en.wikipedia.org/wiki/Dynamic_Adaptive_Streaming_over_HTTP) stream URL.
 3. In the file `vuplay-jwplayer.js` replace `<hls-stream-url>` with your [HLS](https://developer.apple.com/streaming/) stream URL.
 4. In the file `vuplay-jwplayer.js` replace `<fairplay-cert-url>` with the URL to the fairplay certificate. Please contact support@vualto.com if you do not have this URL.
-5. In the file `vuplay-jwplayer.js` replace `<your-vudrm-token>` with a VUDRM token from [https://admin.drm.technology](https://admin.drm.technology)
+5. In the file `vuplay-jwplayer.js` replace `<your-vudrm-token>` with a VUDRM token from [https://admin.vudrm.tech](https://admin.vudrm.tech)
 6. In the file `index.html` replace `<jwplayer-key>` with your JWPlayer key.
 7. Run `npm run build` in the project's root. This will create a `dist` folder that contains all the files needed to run this demo. 
 8. Add the host `jwplayer.vuplay.local.drm.technology` to your local machine's hosts file.
