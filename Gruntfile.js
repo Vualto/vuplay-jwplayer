@@ -11,7 +11,7 @@ module.exports = function(grunt) {
                 banner: "// <%= pkg.description %> \n",
             },
             dist: {
-                src: ["src/<%= pkg.name %>.js"],
+                src: ["<%= pkg.name %>.js"],
                 dest: "dist/<%= pkg.name %>.js",
             },
         },
