@@ -7,11 +7,13 @@
     // Set the URL to retrieve the fairplay certificate from.
     var fairplayCertURL = "<fairplay-cert-url>";
 
-    // Please login to https://admin.vudrm.tech to generate a VUDRM token.
-    var vudrmToken = "<your-vudrm-token>";
+    // TODO: Change the below to the JW Studio DRM docs 
+    // Please login to https://admin.vudrm.tech to generate a StudioDRM token.
+    var studioDrmToken = "<your-studiodrm-token>";
     
-    // setup jwplayer, passing the stream URLs and DRM configurations.  
-    jwplayer("vuplay-container").setup({
+    // TODO: Change lines 23, 30, 50 with the new header name... X-STUDIODRM-TOKEN?
+    // setup jwplayer, passing the stream URLs and DRM configurations.
+    jwplayer("studiodrm-container").setup({
         "playlist": [{
             "sources": [{
                 "file": dashStreamURL,
@@ -20,14 +22,14 @@
                         "url": "https://widevine-license.vudrm.tech/proxy",
                         "headers": [{
                             "name": "X-VUDRM-TOKEN",
-                            "value": vudrmToken
+                            "value": studioDrmToken
                         }]
                     },
                     "playready": {
                         "url": "https://playready-license.vudrm.tech/rightsmanager.asmx",
                         "headers": [{
                             "name": "X-VUDRM-TOKEN",
-                            "value": vudrmToken
+                            "value": studioDrmToken
                         }]
                     }
                 }
@@ -47,7 +49,7 @@
                             },
                             {
                                 "name": "X-VUDRM-TOKEN",
-                                "value": vudrmToken
+                                "value": studioDrmToken
                             }
                         ]
                     }
