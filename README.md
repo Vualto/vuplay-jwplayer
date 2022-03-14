@@ -5,7 +5,7 @@
 
 ## Description
 
-#### !!!!TODO!!!!: Change the below to the JW Studio DRM docs 
+#### TODO: Change the below to the JW Studio DRM docs 
 This repository will demonstrate how to use [Studio DRM](https://jw-studio-drm-docs) with [JW Player](https://jwplayer.com).
 If you have any questions please contact <support@jwplayer.com>
 
@@ -17,7 +17,7 @@ This repository is currently targeted at [version 8.24.3](https://releases.jwpla
 
 1. Install [npm](https://www.npmjs.com/)
 2. Install the [grunt-cli](https://www.npmjs.com/package/grunt-cli): `npm install -g grunt-cli`
-#### !!!!TODO!!!!: Change the below (no.3) to the JW GitHub repo structure name
+#### TODO: Change the below (no.3) to the JW GitHub repo structure name
 3. Clone the repository: `git clone git@github.com:Vualto/vualto-jwplayer.git`
 4. Navigate to the project's root folder: `cd studiodrm-jwplayer`
 5. Install the dependencies: `npm install`
@@ -28,7 +28,7 @@ This repository is currently targeted at [version 8.24.3](https://releases.jwpla
 2. In the file `studiodrm-jwplayer.js` replace `<dash-stream-url>` with your [MPEG-DASH](https://en.wikipedia.org/wiki/Dynamic_Adaptive_Streaming_over_HTTP) stream URL.
 3. In the file `studiodrm-jwplayer.js` replace `<hls-stream-url>` with your [HLS](https://developer.apple.com/streaming/) stream URL.
 4. In the file `studiodrm-jwplayer.js` replace `<fairplay-cert-url>` with the URL to the fairplay certificate. Please contact <support@jwplayer.com> if you do not have this URL.
-#### !!!!TODO!!!!: Change the below (no.5) to the JW Studio DRM docs
+#### TODO: Change the below (no.5) to the JW Studio DRM docs
 5. In the file `studiodrm-jwplayer.js` replace `<your-studiodrm-token>` with a Studio DRM token from [https://jw-studio-drm-token-docs](studiodrm-token-docs)
 6. In the file `index.html` replace `<jwplayer-key>` with your JWPlayer key.
 7. Run `npm run build` in the project's root. This will create a `dist` folder that contains all the files needed to run this demo. 
@@ -49,12 +49,12 @@ For a complete breakdown of supported media extensions please contact <support@j
 
 ## Useful links
 
-### StudioDRM
+### Studio DRM
 
 -   [Contact JW Player](https://support.jwplayer.com/)
 #### !!!!TODO!!!!: Change the below to the JW Studio DRM docs
--   [StudioDRM](https://jw-studio-drm-docs)
--   [StudioDRM token documentation](https://jw-studio-drm-token-docs)
+-   [Studio DRM](https://jw-studio-drm-docs)
+-   [Studio DRM token documentation](https://jw-studio-drm-token-docs)
 
 ### JW Player
 
@@ -73,7 +73,7 @@ For a complete breakdown of supported media extensions please contact <support@j
 ### HLS
 
 -   [Apple's introduction to HLS](https://developer.apple.com/streaming/)
--   [Fairplay](https://developer.apple.com/streaming/fps/)
+-   [FairPlay](https://developer.apple.com/streaming/fps/)
 
 ### Encrypted media extensions
 

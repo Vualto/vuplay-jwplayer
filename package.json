@@ -1,7 +1,7 @@
 {
     "name": "studiodrm-jwplayer",
     "version": "1.0.0",
-    "description": "A basic implementation of the JW Player with the option to integrate StudioDRM",
+    "description": "A basic implementation of the JW Player with the option to integrate Studio DRM",
     "main": "vuplay-jwplayer.js",
     "scripts": {
         "build": "grunt serve",
