@@ -35,7 +35,8 @@ This repository is currently targeted at [version 8.24.3](https://releases.jwpla
 8. Add the host `jwplayer.studiodrm.local` to your local machine's hosts file.
 9. Load a supported browser and go to `https://jwplayer.studiodrm.local:14703`
 
-You will need an enterprise license with JW Player in order to playback DRM encrypted content. Please contact <support@jwplayer.com> or [JW Player](https://www.jwplayer.com/pricing/) for more information. 
+You will need an enterprise license with JW Player in order to playback DRM encrypted content. Please contact <support@jwplayer.com> or see [JW Player pricing](https://www.jwplayer.com/pricing/) for more information. 
+
 
 Retrieve the [JW Player key](https://dashboard.jwplayer.com/#/players/downloads) and copy the license key for the appropriate player in the `Downloads` section.
 
