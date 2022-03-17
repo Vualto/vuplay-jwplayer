@@ -11,7 +11,7 @@
     // Please login to https://admin.vudrm.tech to generate a StudioDRM token.
     var studioDrmToken = "<your-studiodrm-token>";
     
-    // TODO: Change lines 23, 30, 50 with the new header name... X-STUDIODRM-TOKEN?
+    // TODO: Change lines 23, 30, 50 with the new header name... X-STUDIODRM-TOKEN? - https://jwplayer.atlassian.net/browse/CP-27
     // setup jwplayer, passing the stream URLs and DRM configurations.
     jwplayer("studiodrm-container").setup({
         "playlist": [{
