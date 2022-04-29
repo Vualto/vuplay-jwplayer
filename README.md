@@ -26,8 +26,8 @@ This repository is currently targeted at [version 8.24.3](https://releases.jwpla
 2. In the file `studiodrm-jwplayer.js` replace `<dash-stream-url>` with your [MPEG-DASH](https://en.wikipedia.org/wiki/Dynamic_Adaptive_Streaming_over_HTTP) stream URL.
 3. In the file `studiodrm-jwplayer.js` replace `<hls-stream-url>` with your [HLS](https://developer.apple.com/streaming/) stream URL.
 4. In the file `studiodrm-jwplayer.js` replace `<fairplay-cert-url>` with the URL to the Fairplay certificate. Please contact <support@jwplayer.com> if you do not have this URL.
-5. In the file `studiodrm-jwplayer.js` replace `<your-studiodrm-token>` with a Studio DRM token. Details can be found in the [https://developer.jwplayer.com/jwplayer/docs/studio-drm-token-v2](Studio DRM Token v2 documentation)
-6. In the file `index.html` replace `<cloud-player-library-url>` with the cloud player library url found in the "Player Downloads & Keys" section of your JW Player account on the dashboard. Please refer to the following documentation for guidance on retrieving your cloud player library url: https://developer.jwplayer.com/jwplayer/docs/jw8-add-a-player-library#cloud-hosted
+5. In the file `studiodrm-jwplayer.js` replace `<your-studiodrm-token>` with a Studio DRM token. Details can be found in the [Studio DRM Token v2 documentation](https://developer.jwplayer.com/jwplayer/docs/studio-drm-token-v2)
+6. In the file `index.html` replace `<cloud-player-library-url>` with the cloud player library url found in the "Player Downloads & Keys" section of your JW Player account on the dashboard. Please refer to the following documentation for guidance on retrieving your [cloud player library url](https://developer.jwplayer.com/jwplayer/docs/jw8-add-a-player-library#cloud-hosted)
 7. Run `npm run build` in the project's root. This will create a `dist` folder that contains all the files needed to run this demo. 
 8. Add the host `jwplayer.studiodrm.local` to your local machine's hosts file.
 9. Load a supported browser and go to `https://jwplayer.studiodrm.local:14703`
