@@ -7,11 +7,9 @@
     // Set the URL to retrieve the fairplay certificate from.
     var fairplayCertURL = "<fairplay-cert-url>";
 
-    // TODO: Change the below to the JW Studio DRM docs 
-    // Please login to https://admin.vudrm.tech to generate a StudioDRM token.
+    // Please refer to the following documentation for guidance on generating a Studio DRM token: https://developer.jwplayer.com/jwplayer/docs/studio-drm-token-v2
     var studioDrmToken = "<your-studiodrm-token>";
     
-    // TODO: Change lines 23, 30, 50 with the new header name... X-STUDIODRM-TOKEN? - https://jwplayer.atlassian.net/browse/CP-27
     // setup jwplayer, passing the stream URLs and DRM configurations.
     jwplayer("studiodrm-container").setup({
         "playlist": [{

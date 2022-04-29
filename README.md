@@ -5,8 +5,7 @@
 
 ## Description
 
-#### TODO: Change the below to the JW Studio DRM docs - https://jwplayer.atlassian.net/browse/CP-27
-This repository will demonstrate how to use [Studio DRM](https://jw-studio-drm-docs) with [JW Player](https://jwplayer.com).
+This repository will demonstrate how to use [Studio DRM](https://developer.jwplayer.com/jwplayer/docs/studio-drm-standalone-getting-started) with [JW Player](https://jwplayer.com).
 If you have any questions please contact <support@jwplayer.com>
 
 This repository is currently targeted at [version 8.24.3](https://releases.jwplayer.com/jw-player/#v8.24.3) of JW Player
@@ -17,7 +16,6 @@ This repository is currently targeted at [version 8.24.3](https://releases.jwpla
 
 1. Install [npm](https://www.npmjs.com/)
 2. Install the [grunt-cli](https://www.npmjs.com/package/grunt-cli): `npm install -g grunt-cli`
-#### TODO: Change the below (no.3) to the JW GitHub repo structure name - https://jwplayer.atlassian.net/browse/CP-27
 3. Clone the repository: `git clone git@github.com:Vualto/vualto-jwplayer.git`
 4. Navigate to the project's root folder: `cd studiodrm-jwplayer`
 5. Install the dependencies: `npm install`
@@ -28,8 +26,7 @@ This repository is currently targeted at [version 8.24.3](https://releases.jwpla
 2. In the file `studiodrm-jwplayer.js` replace `<dash-stream-url>` with your [MPEG-DASH](https://en.wikipedia.org/wiki/Dynamic_Adaptive_Streaming_over_HTTP) stream URL.
 3. In the file `studiodrm-jwplayer.js` replace `<hls-stream-url>` with your [HLS](https://developer.apple.com/streaming/) stream URL.
 4. In the file `studiodrm-jwplayer.js` replace `<fairplay-cert-url>` with the URL to the fairplay certificate. Please contact <support@jwplayer.com> if you do not have this URL.
-#### TODO: Change the below (no.5) to the JW Studio DRM docs - https://jwplayer.atlassian.net/browse/CP-27
-5. In the file `studiodrm-jwplayer.js` replace `<your-studiodrm-token>` with a Studio DRM token from [https://jw-studio-drm-token-docs](studiodrm-token-docs)
+5. In the file `studiodrm-jwplayer.js` replace `<your-studiodrm-token>` with a Studio DRM token. Details can be found in the [https://developer.jwplayer.com/jwplayer/docs/studio-drm-token-v2](Studio DRM Token v2 documentation)
 6. In the file `index.html` replace `<jwplayer-key>` with your JWPlayer key.
 7. Run `npm run build` in the project's root. This will create a `dist` folder that contains all the files needed to run this demo. 
 8. Add the host `jwplayer.studiodrm.local` to your local machine's hosts file.
@@ -45,7 +42,6 @@ In order to allow DRM encrypted playback in chrome (<https://goo.gl/EEhZqT>), SS
 
 The browser must support [encrypted media extensions](https://www.w3.org/TR/2016/CR-encrypted-media-20160705/).
 Currently this includes the latest versions of Chrome, Firefox, Internet Explorer 11 and Edge.
-#### TODO: See if there is a breakdown of this in the JW docs - https://jwplayer.atlassian.net/browse/CP-27
 For a complete breakdown of supported media extensions please contact <support@jwplayer.com>
 
 ## Useful links
@@ -53,9 +49,8 @@ For a complete breakdown of supported media extensions please contact <support@j
 ### Studio DRM
 
 -   [Contact JW Player](https://support.jwplayer.com/)
-#### TODO: Change the below to the JW Studio DRM docs - https://jwplayer.atlassian.net/browse/CP-27
--   [Studio DRM](https://jw-studio-drm-docs)
--   [Studio DRM token documentation](https://jw-studio-drm-token-docs)
+-   [Studio DRM](https://developer.jwplayer.com/jwplayer/docs/studio-drm-standalone-getting-started)
+-   [Studio DRM token documentation](https://developer.jwplayer.com/jwplayer/docs/studio-drm-token-v2)
 
 ### JW Player
 
