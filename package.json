@@ -2,7 +2,7 @@
     "name": "studiodrm-jwplayer",
     "version": "1.0.0",
     "description": "A basic implementation of the JW Player with the option to integrate Studio DRM",
-    "main": "vuplay-jwplayer.js",
+    "main": "studiodrm-jwplayer.js",
     "scripts": {
         "build": "grunt serve",
         "format:write": "prettier --write \"**/*.{ts,tsx,js,jsx,json,css,scss,md,html}\"",
