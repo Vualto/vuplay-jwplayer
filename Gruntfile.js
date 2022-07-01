@@ -19,7 +19,7 @@ module.exports = function(grunt) {
         copy: {
             all: {
                 expand: true,
-                src: ["index.html", "assets/vuplay_poster.png"],
+                src: ["index.html", "assets/jwplayer_logo.png"],
                 dest: "<%= dist %>/",
                 flatten: true,
             },
@@ -42,7 +42,7 @@ module.exports = function(grunt) {
             server: {
                 options: {
                     protocol: "https",
-                    hostname: "jwplayer.vuplay.local.drm.technology",
+                    hostname: "jwplayer.studiodrm.local",
                     port: 14705,
                     base: "dist",
                     keepalive: true,
