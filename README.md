@@ -16,7 +16,7 @@ This repository is currently targeted at [version 8.24.3](https://releases.jwpla
 
 1. Install [npm](https://www.npmjs.com/)
 2. Install the [grunt-cli](https://www.npmjs.com/package/grunt-cli): `npm install -g grunt-cli`
-3. Clone the repository: `git clone git@github.com:Vualto/vualto-jwplayer.git`
+3. Clone the repository: `git clone git@github.com:Vualto/vuplay-jwplayer.git`
 4. Navigate to the project's root folder: `cd studiodrm-jwplayer`
 5. Install the dependencies: `npm install`
 
