@@ -16,8 +16,8 @@ This repository is currently targeted at [version 8.24.3](https://releases.jwpla
 
 1. Install [npm](https://www.npmjs.com/)
 2. Install the [grunt-cli](https://www.npmjs.com/package/grunt-cli): `npm install -g grunt-cli`
-3. Clone the repository: `git clone git@github.com:Vualto/vualto-jwplayer.git`
-4. Navigate to the project's root folder: `cd studiodrm-jwplayer`
+3. Clone the repository: `git clone git@github.com:Vualto/vuplay-jwplayer.git`
+4. Navigate to the project's root folder: `cd vuplay-jwplayer`
 5. Install the dependencies: `npm install`
 
 ### Build and run the dev environment
@@ -30,7 +30,7 @@ This repository is currently targeted at [version 8.24.3](https://releases.jwpla
 6. In the file `index.html` replace `<cloud-player-library-url>` with the cloud player library url found in the "Player Downloads & Keys" section of your JW Player account on the dashboard. Please refer to the following documentation for guidance on retrieving your [cloud player library url](https://developer.jwplayer.com/jwplayer/docs/jw8-add-a-player-library#cloud-hosted)
 7. Run `npm run build` in the project's root. This will create a `dist` folder that contains all the files needed to run this demo. 
 8. Add the host `jwplayer.studiodrm.local` to your local machine's hosts file.
-9. Load a supported browser and go to `https://jwplayer.studiodrm.local:14703`
+9. Load a supported browser and go to `https://jwplayer.studiodrm.local:14705`
 
 You will need an enterprise license with JW Player in order to playback DRM encrypted content. Please contact <support@jwplayer.com> or see [JW Player pricing](https://www.jwplayer.com/pricing/) for more information. 
 
